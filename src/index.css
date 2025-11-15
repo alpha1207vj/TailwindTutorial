@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* COLORS */
+  --main-color: #FF6F61;                /* Primary accent color */
+  --background-page-color: #FFFDD0;   /* Page background */ 
+  --secondary-background: #FFFEE8;
+  --navbar-border-bottom-color: rgba(0, 0, 0, 0.1); /* Navbar bottom border */
+  --text-color: #FFF;  
+  --navbar-button-hover: #FF7D6B;               
+
+  /* FONTS */
+  --font-main: 'Rubik', sans-serif;  /* Primary font */
+
+  /*FONT-SIZE*/
+  --font-size-logo: 1.5rem;
+  --font-size-button: 1rem;
+}
+
+
+
+
+  
+@layer components {
+  .gradient_textA {
+    background: linear-gradient(to right, #FFD205 0%, #FF8D45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient_textB
+  {
+    background: #FF6F61;
+background: linear-gradient(to right, #FF6F61 0%, #B8A886 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  }
+  .gradient_background
+  {
+    background: #FFF4A6 ;
+background: linear-gradient(90deg, rgba(255, 244, 166, 1) 0%, rgba(255, 225, 185, 1) 50%, rgba(244, 232, 190, 1) 100%);
+  }
+  .section_cardshadow
+  {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  .section_cardshadowhover
+  {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+  .section_cardshadowB
+  {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .section_cardshadowBhover
+  {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
